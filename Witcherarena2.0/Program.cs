@@ -28,6 +28,7 @@ switch (ChoiceMenu.ToUpper())
     case "H":
         Console.WriteLine("Zacinas hru.....");
         Thread.Sleep(1500);
+        Console.Clear();
         break;
     case "O":
         Console.Clear();
@@ -46,15 +47,48 @@ switch (ChoiceMenu.ToUpper())
         break;
     default:
         Console.WriteLine("To co si zadal no take tu neni");
-        break;
+        return;
 }
-
-
-string PlayerName = Console.ReadLine();
-
-
 player Player = new player();
+Console.WriteLine("Zadaj meno svojho hraca:");
+string PlayerName = Console.ReadLine();
 Player.setName(PlayerName);
 
-Console.WriteLine(PlayerName);
+Console.WriteLine($"Meno hraca je {PlayerName}");
+Thread.Sleep(1000);
+Console.WriteLine("Pre nacitanie prvej areny stlac ENTER..");
+Console.ReadLine();
+Console.Clear();    
+
+
+Console.WriteLine("Vitaj v prvej arene");
+Thread.Sleep(1000);
+Player.startStats();
+string Stats = Player.startStats();
+Console.WriteLine(Stats);
+Thread.Sleep(1000);
+Console.WriteLine("Pre zacatie boja stlac ENTER...");
+Console.ReadLine();
+Console.Clear();
+
+
+player player = new player();
+_1Monster1 monster1 = new _1Monster1();
+string stats = Player.Stats();
+string monsterStats = monster1.currentMonsterStats(monster1);
+
+Console.WriteLine("Prisera sa zobudza pre HIT stac 'H'..");
+Console.ReadLine();
+monster1.TakeDamage();
+Player.TakeDamage();
+Console.WriteLine($"Davaj si pozor prisera utoci!");
+Thread.Sleep(500);
+Console.WriteLine(stats);
+Console.WriteLine(monsterStats);
+
+
+
+
+
+
 
