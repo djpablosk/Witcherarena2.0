@@ -24,7 +24,16 @@ namespace Witcherarena2._0
             int currentMonsterHp = monsterHp -= damageHit;
             return $"Zostatok zivotov nepriatela: {currentMonsterHp} ";
         }
-        
+        public void TakeKill()
+        {
+            monsterHp = 0;
+        }
+        internal string currentMonsterStats2(_1Monster1 monster)
+        {
+            int currentMonsterHp = 40;
+            int currentMonsterHp2 = currentMonsterHp -= damageHit ;
+            return $"Zostatok zivotov nepriatela: {currentMonsterHp} ";
+        }
 
     }
 }

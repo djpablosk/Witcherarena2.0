@@ -30,6 +30,7 @@ namespace Witcherarena2._0
         }
         public string Stats()
         {
+            int actualHp = currentHp -= damage;
             return $"Tvoj zostatok zivotov: {currentHp}/{maxHp}";
         }
 

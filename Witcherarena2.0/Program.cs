@@ -54,7 +54,6 @@ Console.WriteLine("Zadaj meno svojho hraca:");
 string PlayerName = Console.ReadLine();
 Player.setName(PlayerName);
 
-Console.WriteLine($"Meno hraca je {PlayerName}");
 Thread.Sleep(1000);
 Console.WriteLine("Pre nacitanie prvej areny stlac ENTER..");
 Console.ReadLine();
@@ -87,7 +86,71 @@ Console.WriteLine(stats);
 Console.WriteLine(monsterStats);
 
 
+Console.WriteLine("Pre HIT stlac 'H'..");
+Console.ReadLine();
+monster1.TakeDamage();
+Console.WriteLine("Prisera sa brani!");
+Player.TakeDamage();
+Console.WriteLine(stats);
+Console.WriteLine(monsterStats);
+Console.WriteLine("Pre HIT stlac 'H'..");
+Console.ReadLine();
+monster1.TakeDamage();
+Console.WriteLine("Ziskal si schopnost pre rychly utok!");
+monster1.TakeKill();
+Console.WriteLine("Prisera je mrtva!");
+Thread.Sleep(1000);
+Console.WriteLine(stats);
+Console.WriteLine(monsterStats);
+Console.WriteLine("Pre pokracovanie stlac ENTER..");
+Console.ReadLine();
+Console.Clear();
 
+Console.WriteLine("Gratulujem prezil si prvu arenu!");
+Thread.Sleep(3000);
+Console.Clear();
+
+Console.WriteLine("Vytaj v druhej arene");
+Thread.Sleep(500);
+Console.WriteLine(player.Stats());
+Console.WriteLine("Pre vstup do areny stlac ENTER....");
+Console.ReadLine();
+Console.Clear();
+
+
+
+player Player1 = new player();
+_2monster2 monster2 = new _2monster2();
+string statsM = monster2.currentMonster2Stats(monster2);
+
+Console.WriteLine("Prisera sa zobudza!");
+Thread.Sleep(1000);
+Console.WriteLine("Pre HIT stlac 'H'");
+Console.ReadLine();
+monster2.TakeDamage();
+Console.WriteLine("Davaj si pozor pridera utoci!");
+Thread.Sleep(1000);
+Console.WriteLine("Pre hit Stlac 'H'");
+Console.ReadLine();
+monster2.TakeDamage(20);
+Console.WriteLine(statsM);
+Thread.Sleep(1500);
+Console.Clear();
+Console.WriteLine("Znova stlac 'H'");
+Console.ReadLine();
+monster2.TakeDamage(20);
+Console.WriteLine(statsM);
+Thread.Sleep(1500);
+Console.Clear();
+Console.WriteLine("Posledny hit stlac 'H'");
+Console.ReadLine();
+monster2.TakeDamage(20);
+Console.WriteLine("Prisera je mrtva!");
+Thread.Sleep(2000);
+Console.Clear();
+Console.WriteLine("Gratulujem prezil si druhu arenu!");
+Thread.Sleep(3000);
+Console.Clear();
 
 
 
