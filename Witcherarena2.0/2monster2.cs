@@ -22,10 +22,5 @@ namespace Witcherarena2._0
             int currentMonsterHp2 = monsterHp -= MonsterDamage;
             return $"Zostatok zivotov nepriatela: {currentMonsterHp2} ";
         }
-        public void TakeDamage2(int damageHit =20)
-        {
-            int 
-        }
-
     }
 }

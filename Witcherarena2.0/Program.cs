@@ -1,6 +1,31 @@
 ﻿using System.Reflection.Metadata;
 using Witcherarena2._0;
 
+Console.WriteLine("Pre lepsi zazitok z hry daj si okno konzoly na celu obrazovku!");
+Thread.Sleep(1000);
+Console.WriteLine("Pre pokracovanie stlac ENTER...");
+Console.ReadLine();
+Console.Clear();
+
+Console.WriteLine("Loading game");
+
+int i = 0;
+while (i < 5)
+{
+    Thread.Sleep(150);
+    Console.Clear();
+    Console.WriteLine(".");
+    Thread.Sleep(150);
+    Console.Clear();
+    Console.WriteLine("..");
+    Thread.Sleep(150);
+    Console.Clear();
+    Console.WriteLine("...");
+    Thread.Sleep(150);
+    Console.Clear();
+    i++;
+}
+
 Console.WriteLine(@"
  /$$      /$$ /$$   /$$               /$$                                  /$$$$$$                                         
 | $$  /$ | $$|__/  | $$              | $$                                 /$$__  $$                                        
@@ -11,7 +36,7 @@ Console.WriteLine(@"
 | $$/   \  $$| $$  |  $$$$/|  $$$$$$$| $$  | $$|  $$$$$$$| $$            | $$  | $$| $$      |  $$$$$$$| $$  | $$|  $$$$$$$
 |__/     \__/|__/   \___/   \_______/|__/  |__/ \_______/|__/            |__/  |__/|__/       \_______/|__/  |__/ \_______/
 ");
-Console.WriteLine("Nacitavam hru......");
+Console.WriteLine("Vitaj!!");
 Thread.Sleep(2500);
 Console.Clear();
 
@@ -100,13 +125,14 @@ Console.WriteLine("Ziskal si schopnost pre rychly utok!");
 monster1.TakeKill();
 Console.WriteLine("Prisera je mrtva!");
 Thread.Sleep(1000);
-Console.WriteLine(stats);
-Console.WriteLine(monsterStats);
+Console.WriteLine("Zostatok zivotov nepriatela : 0");
 Console.WriteLine("Pre pokracovanie stlac ENTER..");
 Console.ReadLine();
 Console.Clear();
 
 Console.WriteLine("Gratulujem prezil si prvu arenu!");
+Thread.Sleep(300);
+Console.WriteLine("Wait.....");
 Thread.Sleep(3000);
 Console.Clear();
 
@@ -128,7 +154,7 @@ Thread.Sleep(1000);
 Console.WriteLine("Pre HIT stlac 'H'");
 Console.ReadLine();
 monster2.TakeDamage();
-Console.WriteLine("Davaj si pozor pridera utoci!");
+Console.WriteLine("Davaj si pozor prisera utoci!");
 Thread.Sleep(1000);
 Console.WriteLine("Pre hit Stlac 'H'");
 Console.ReadLine();
@@ -139,10 +165,10 @@ Console.Clear();
 Console.WriteLine("Znova stlac 'H'");
 Console.ReadLine();
 monster2.TakeDamage(20);
-Console.WriteLine(statsM);
+Console.WriteLine("Zostatok zivotov nepriatela : 60");
 Thread.Sleep(1500);
 Console.Clear();
-Console.WriteLine("Posledny hit stlac 'H'");
+Console.WriteLine("Pre posledny silny hit stlac 2x  'H'");
 Console.ReadLine();
 monster2.TakeDamage(20);
 Console.WriteLine("Prisera je mrtva!");
@@ -153,5 +179,13 @@ Thread.Sleep(3000);
 Console.Clear();
 
 
-
-
+Console.WriteLine("Tvoje skore je 2000 bodov!");
+Thread.Sleep(1500);
+Console.WriteLine("Gratulujem!");
+Thread.Sleep(500);
+Console.WriteLine("Wait.....");
+Thread.Sleep(3000);
+Console.WriteLine("Koniec hry!");
+Console.WriteLine("Pre ukoncenie stlac ENTER..");
+Console.ReadLine();
+Console.Clear();
